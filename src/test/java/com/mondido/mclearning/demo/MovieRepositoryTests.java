@@ -1,9 +1,6 @@
 package com.mondido.mclearning.demo;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-
-import javax.transaction.Transactional;
 
 import com.mondido.mclearning.demo.models.Movie;
 import com.mondido.mclearning.demo.repositories.MovieRepository;
@@ -13,7 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
@@ -37,5 +33,5 @@ public class MovieRepositoryTests {
         assertEquals(targetMovie.getId(), movie.getId());
     }
 
-    
+
 }
